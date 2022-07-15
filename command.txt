@@ -1,0 +1,214 @@
+Git
+
+sudo apt update
+sudo apt install git
+
+node 
+curl -s https://deb.nodesource.com/setup_16.x | sudo bash
+sudo apt install nodejs -y
+node -v
+
+yarn
+npm install --global yarn
+
+
+docker
+sudo apt-get remove docker docker-engine docker.io
+sudo apt-get update
+sudo apt install docker.io
+sudo snap install docker
+docker --version
+sudo docker run hello-world
+sudo docker images
+sudo docker ps -a
+sudo docker ps
+
+
+apt install docker/yum install dokcer
+docker pull grafana/grafana
+docker run -d --name=grafana -p 3001:3000 grafana/grafana
+docker run -d -p 80:80 docker/getting-started
+
+
+npm install --ignore-scripts puppeteer
+
+eyJrIjoiamI5ZUMzNWdtMndVNzBtVGxHcXN6QlVRUGJUeVVkelAiLCJuIjoiZ3JhZmFuYSIsImlkIjoxfQ==
+
+
+proxy:
+  '/test':
+    target: 'https://example.com'
+    changeOrigin: true
+
+  '/grafana/api':
+    # May be an internal DNS
+    target: http://3.86.223.5:3000/
+    headers:
+      Authorization: Bearer eyJrIjoiamI5ZUMzNWdtMndVNzBtVGxHcXN6QlVRUGJUeVVkelAiLCJuIjoiZ3JhZmFuYSIsImlkIjoxfQ==
+
+grafana:
+  # Publicly accessible domain
+  domain: https://monitoring.company.com
+
+
+
+https://hinty.io/ivictbor/simple-way-to-docker-on-windows-10-home-with-wsl-2/
+
+
+https://www.codegrepper.com/code-examples/shell/how+to+increase+ram+in+ubuntu
+
+
+
+
+
+
+import {
+  EntityGrafanaAlertsCard,
+} from '@k-phoen/backstage-plugin-grafana';
+import {
+  EntityGrafanaDashboardsCard,
+} from '@k-phoen/backstage-plugin-grafana';
+
+
+
+
+
+    <Grid item md={6}>
+      {/* Grafana alert card start */}
+      <EntityGrafanaAlertsCard />
+      {/* Grafana alert card end */}
+    </Grid>    
+
+    <Grid item md={6}>
+      {/* Grafana alert card start */}
+      <EntityGrafanaDashboardsCard />
+      {/* Grafana alert card end */}
+    </Grid>
+
+ 
+
+
+
+Docker commands: 
+
+https://hub.docker.com/r/docker/getting-started
+
+docker pull grafana/grafana
+
+docker run -d --name=grafana -p 3002:3000 grafana/grafana
+docker run -d -p 80:80 docker/getting-started
+
+docker run \
+    -p 9090:9090 \
+    -v /path/to/prometheus.yml:/etc/prometheus/prometheus.yml \
+    prom/prometheus
+
+
+
+https://hinty.io/devforth/how-to-install-wsl-2-best-way-to-run-real-linux-on-windows/
+http://localhost:9090
+
+sudo ufw status
+wsl --shutdown
+https://linuxconfig.org/temporary-failure-resolving-error-on-ubuntu-20-04-focal-fossa-linux
+
+Grafana.in Configuration files: /etc/grafana
+Data location: /var/lib/grafana
+Log Location: /var/log/grafana
+
+
+https://github.com/backstage/backstage
+https://www.npmjs.com/package/@backstage/plugin-catalog-import?activeTab=readme
+
+
+
+remove the content in /var/lib/apt/lists
+wsl --shutdown (for not downloading repo)
+
+https://github.com/backstage/backstage
+
+
+token
+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
+
+
+
+
+
+
+
+js out of memory
+export NODE_OPTIONS="--max-old-space-size=8192"
+set NODE_OPTIONS=--max_old_space_size=8192
+
+
+
+
+
+yarn cache clean
+npm install -g node-gyp
+ npm install --global yarn@1.22.19
+
+npm uninstall -g yarn
+
+rm yarn.lock
+yarn cache clean
+yarn install
+
+sudo apt autoremove python
+
+
+
+
+
+Add this to your package.json file, then re-run yarn (or yarn install):  it works after removing
+
+"resolutions": {
+  "fsevents": "1.2.9"
+}
+yarn upgarde
+yarn --ignore-platform
+yarn install --check-files
+
+
+
+
+
+https://www.youtube.com/watch?v=bPHOI29rwB0&t=0s
+
+
+
+promhttp_metric_handler_requests_total{code="200"}
+
+eyJrIjoiZmluVlFoMXFHZEVGT25YMHY5RFFESFNVWnNGdnB3c3QiLCJuIjoiZ3JhZmFuYSIsImlkIjoxfQ==
+
+curl -H "Authorization: Bearer eyJrIjoiZmluVlFoMXFHZEVGT25YMHY5RFFESFNVWnNGdnB3c3QiLCJuIjoiZ3JhZmFuYSIsImlkIjoxfQ==" http://localhost:3001/api/dashboards/home
+
+
+kill port
+sudo lsof -t -i:8080
+sudo kill -9 <PID>
+sudo ufw status verbose
+sudo ufw enable
+sudo ufw allow 22/tcp
+ 172.22.105.52
+
+
+
+
+
+
+Jenkins
+
+cat /var/lib/jenkins/secrets/initialAdminPasswordn
+https://www.youtube.com/watch?v=vQRSRo7Ef7c&t=1902s
+https://www.youtube.com/watch?v=vQRSRo7Ef7c&t=1902s
+https://www.youtube.com/watch?v=Z9G5stlXoyg
+https://github.com/ravdy?tab=repositories
+
+Adding entire folder to github [need to create empty repo in github] eg;devops 
+git init
+git add -A
+git commit -m 'Added my project'
+git remote add origin "https://github.com/username/reponame"  [reponame=devops]
+git push -u -f origin master
